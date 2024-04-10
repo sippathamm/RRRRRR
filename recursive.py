@@ -12,9 +12,10 @@ def generate_permutation(n: int, s: str) -> list:
 
 def main() -> None:
     n = int(input('Enter a number of occurrences of \'ร\': '))
+    print('Word:', 'ร' * n)
     permutation = generate_permutation(n, '')
     print('Number of permutations:', len(permutation))
-    print('Permutation: ', permutation)
+    print('Possible permutations: ', sorted(permutation))
 
 
 if __name__ == '__main__':
